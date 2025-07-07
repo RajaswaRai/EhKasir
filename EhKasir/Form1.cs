@@ -1,5 +1,6 @@
 ﻿using EhKasir;
 using KasirPBO.res.Model;
+using KasirPBO.res;
 using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Collections.Generic;
@@ -14,13 +15,13 @@ using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
-
 namespace KasirPBO
 {
-
+    
     public partial class homeForm : Form
     {
-        float total = 0;
+        int total = 0;
+        int change = 0;
         UserModel? currentUser = null;
         BindingList<ProductModel> transactionProducts = new BindingList<ProductModel>();
 
@@ -64,12 +65,25 @@ namespace KasirPBO
         private void homeForm_Load(object sender, EventArgs e)
         {
             // delete after dev
-            var users = SqliteDataAccess.LoadUser(); // Ambil semua user dari DB
-            string username = "admin";
-            string password = PasswordHelper.HashPassword("12345678"); ;
-            UserModel? user = users.FirstOrDefault(u => u.username == username && u.password == password);
-            currentUser = user;
-            cashierScreenLoad();
+            //var users = SqliteDataAccess.LoadUser(); // Ambil semua user dari DB
+            //string username = "admin";
+            //string password = PasswordHelper.HashPassword("12345678"); ;
+            //UserModel? user = users.FirstOrDefault(u => u.username == username && u.password == password);
+            //currentUser = user;
+            //cashierScreenLoad();
+            RoundedButton btnLogin = new RoundedButton();
+            btnLogin.Text = "Login";
+            btnLogin.Size = new Size(100, 40);
+            btnLogin.Location = new Point(100, 100); // posisi di form
+            btnLogin.BackColor = Color.MediumSlateBlue;
+            btnLogin.ForeColor = Color.White;
+            btnLogin.BorderRadius = 15;
+            btnLogin.BorderSize = 0;
+
+            //btnLogin.Click += BtnLogin_Click;
+
+            this.Controls.Add(btnLogin);
+
         }
 
         private void EnsureTransactionDgvColumns()
@@ -358,7 +372,7 @@ namespace KasirPBO
             product.code = code;
             product.name = productNameTxt.Text;
 
-            if (float.TryParse(productPriceTxt.Text, out float price) &&
+            if (int.TryParse(productPriceTxt.Text, out int price) &&
                 int.TryParse(productQuantityTxt.Text, out int quantity))
             {
                 product.price = price;
@@ -472,6 +486,9 @@ namespace KasirPBO
             TransactionModel transaction = new TransactionModel
             {
                 items = itemsJson,
+                total = total,
+                money = int.Parse(buyerMoneyTxt.Text),
+                changes = change,
                 user_id = currentUserID,
                 timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
             };
@@ -482,6 +499,7 @@ namespace KasirPBO
             // Kosongkan transaksi
             transactionProducts.Clear();
             totalLabel.Text = "Rp. 0";
+            buyerMoneyTxt.Text = "";
 
             MessageBox.Show("Transaksi berhasil diproses!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
@@ -490,13 +508,14 @@ namespace KasirPBO
         {
             List<TransactionModel> historyList = SqliteDataAccess.LoadTransactions();
             historyDgv.DataSource = historyList;
-            historyDgv.Columns[2].Visible = false;
+            historyDgv.Columns["User_id"].Visible = false;
 
             if (historyDgv.Columns.Count > 0)
             {
-                historyDgv.Columns["Id"].Visible = false;
-
                 historyDgv.Columns["User"].HeaderText = "Kasir";
+                historyDgv.Columns["Total"].HeaderText = "Total";
+                historyDgv.Columns["Money"].HeaderText = "Jumlah tunai";
+                historyDgv.Columns["Changes"].HeaderText = "Kembalian";
                 historyDgv.Columns["Timestamp"].HeaderText = "Waktu Transaksi";
                 historyDgv.Columns["Items"].HeaderText = "Detail Item";
             }
@@ -715,9 +734,9 @@ namespace KasirPBO
 
         private void calculateChange()
         {
-            if (float.TryParse(buyerMoneyTxt.Text, out float uangPembeli))
+            if (int.TryParse(buyerMoneyTxt.Text, out int uangPembeli))
             {
-                float change = uangPembeli - total;
+                change = uangPembeli - total;
                 buyerChangeTxt.Text = change.ToString("N0");
             }
             else
@@ -728,6 +747,11 @@ namespace KasirPBO
         private void buyerMoneyTxt_TextChanged(object sender, EventArgs e)
         {
             calculateChange();
+        }
+
+        private void totalLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

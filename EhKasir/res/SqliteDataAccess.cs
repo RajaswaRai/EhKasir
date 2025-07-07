@@ -48,6 +48,9 @@ namespace KasirPBO
                 CREATE TABLE IF NOT EXISTS transactions (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
                     items TEXT NOT NULL, -- bisa JSON string
+                    total INTEGER NOT NULL,
+                    money INTEGER NOT NULL,
+                    changes INTEGER NOT NULL,
                     user_id INTEGER NOT NULL,
                     timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
                     FOREIGN KEY(user_id) REFERENCES users(id)
@@ -95,16 +98,16 @@ namespace KasirPBO
                 }
 
                 // Seeder: Transactions (dummy)
-                int transCount = conn.ExecuteScalar<int>("SELECT COUNT(*) FROM transactions");
-                if (transCount == 0)
-                {
-                    string dummyItemsJson = "[{\"product_id\":1,\"qty\":2,\"price\":5000},{\"product_id\":2,\"qty\":1,\"price\":4000}]";
+            //    int transCount = conn.ExecuteScalar<int>("SELECT COUNT(*) FROM transactions");
+            //    if (transCount == 0)
+            //    {
+            //        string dummyItemsJson = "[{\"product_id\":1,\"qty\":2,\"price\":5000},{\"product_id\":2,\"qty\":1,\"price\":4000}]";
 
-                    conn.Execute(@"
-                INSERT INTO transactions (items, user_id)
-                VALUES (@Items, @UserId);
-            ", new { Items = dummyItemsJson, UserId = 1 });
-                }
+            //        conn.Execute(@"
+            //    INSERT INTO transactions (items, user_id)
+            //    VALUES (@Items, @UserId);
+            //", new { Items = dummyItemsJson, UserId = 1 });
+            //    }
             }
         }
 
@@ -218,11 +221,14 @@ namespace KasirPBO
             SELECT 
                 t.id,
                 t.items,
+                t.total,                
+                t.money,                
+                t.changes,                
                 t.user_id,
                 t.timestamp,
                 u.display_name AS user
-            FROM transactions t
-            LEFT JOIN users u ON t.user_id = u.Id
+            FROM transactions as t
+            LEFT JOIN users as u ON t.user_id = u.Id
             ORDER BY t.Timestamp DESC
         ";
 
@@ -237,10 +243,13 @@ namespace KasirPBO
             {
                 conn.Open();
                 var cmd = conn.CreateCommand();
-                cmd.CommandText = @"INSERT INTO transactions (items, user_id, timestamp)
-                            VALUES (@items, @userID, @timestamp)";
+                cmd.CommandText = @"INSERT INTO transactions (items, total, money, changes, user_id, timestamp)
+                            VALUES (@items, @total, @money, @changes, @userID, @timestamp)";
 
                 cmd.Parameters.AddWithValue("@items", transaction.items);
+                cmd.Parameters.AddWithValue("@total", transaction.total);
+                cmd.Parameters.AddWithValue("@money", transaction.money);
+                cmd.Parameters.AddWithValue("@changes", transaction.changes);
                 cmd.Parameters.AddWithValue("@userID", transaction.user_id);
                 cmd.Parameters.AddWithValue("@timestamp", transaction.timestamp);
 

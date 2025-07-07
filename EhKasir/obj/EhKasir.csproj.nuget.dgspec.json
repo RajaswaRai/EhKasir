@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Code\\Csharp\\VS\\EhKasir\\EhKasir\\EhKasir.csproj": {}
+    "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\EhKasir.csproj": {}
   },
   "projects": {
-    "D:\\Code\\Csharp\\VS\\EhKasir\\EhKasir\\EhKasir.csproj": {
+    "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\EhKasir.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code\\Csharp\\VS\\EhKasir\\EhKasir\\EhKasir.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\EhKasir.csproj",
         "projectName": "EhKasir",
-        "projectPath": "D:\\Code\\Csharp\\VS\\EhKasir\\EhKasir\\EhKasir.csproj",
-        "packagesPath": "C:\\Users\\MRRB\\.nuget\\packages\\",
-        "outputPath": "D:\\Code\\Csharp\\VS\\EhKasir\\EhKasir\\obj\\",
+        "projectPath": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\EhKasir.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\MRRB\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -94,7 +94,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

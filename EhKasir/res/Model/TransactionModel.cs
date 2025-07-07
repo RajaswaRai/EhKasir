@@ -12,6 +12,9 @@ namespace KasirPBO.res.Model
     {
        public int id { get; set; }
        public string items { get; set; }
+       public int total { get; set; }
+       public int money { get; set; }
+       public int changes { get; set; }
        public string user_id { get; set; }
        public string user { get; set;  }
        public string timestamp { get; set; }

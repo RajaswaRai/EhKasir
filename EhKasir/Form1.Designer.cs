@@ -41,10 +41,6 @@
             totalLabel = new Label();
             totalTitle = new Label();
             ItemsPanel = new Panel();
-            buyerMoneyTxt = new TextBox();
-            buyerChangeTxt = new Label();
-            label12 = new Label();
-            label11 = new Label();
             userManageBtn = new Button();
             clearTransactionBtn = new Button();
             historyBtn = new Button();
@@ -52,10 +48,16 @@
             checkPriceBtn = new Button();
             proccessBtn = new Button();
             transactionDgv = new DataGridView();
+            buyerMoneyTxt = new TextBox();
+            buyerChangeTxt = new Label();
+            label12 = new Label();
+            label11 = new Label();
             kasirSplitContainer = new SplitContainer();
             productsCmb = new ComboBox();
             KasirScreen = new Panel();
             loginScreen = new Panel();
+            loginpanel = new Panel();
+            label13 = new Label();
             label2 = new Label();
             label1 = new Label();
             passwordTxt = new TextBox();
@@ -90,7 +92,6 @@
             label9 = new Label();
             label10 = new Label();
             userManageDgv = new DataGridView();
-            maskedTextBox1 = new MaskedTextBox();
             panel1.SuspendLayout();
             ItemsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)transactionDgv).BeginInit();
@@ -100,6 +101,7 @@
             kasirSplitContainer.SuspendLayout();
             KasirScreen.SuspendLayout();
             loginScreen.SuspendLayout();
+            loginpanel.SuspendLayout();
             inventoriScreen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)productsDataGrid).BeginInit();
             historyScreen.SuspendLayout();
@@ -110,14 +112,15 @@
             // 
             // addProductBtn
             // 
-            addProductBtn.FlatStyle = FlatStyle.Flat;
-            addProductBtn.Location = new Point(325, 68);
-            addProductBtn.Margin = new Padding(3, 4, 3, 4);
+            addProductBtn.BackColor = Color.MediumSpringGreen;
+            addProductBtn.Font = new Font("Verdana", 10F);
+            addProductBtn.ForeColor = SystemColors.ControlText;
+            addProductBtn.Location = new Point(296, 52);
             addProductBtn.Name = "addProductBtn";
-            addProductBtn.Size = new Size(93, 110);
+            addProductBtn.Size = new Size(81, 82);
             addProductBtn.TabIndex = 0;
             addProductBtn.Text = "Tambah";
-            addProductBtn.UseVisualStyleBackColor = true;
+            addProductBtn.UseVisualStyleBackColor = false;
             addProductBtn.Click += addProductBtn_Click;
             // 
             // title
@@ -125,16 +128,17 @@
             title.AutoSize = true;
             title.BackColor = Color.Transparent;
             title.FlatStyle = FlatStyle.Flat;
-            title.Font = new Font("Poppins", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            title.Location = new Point(12, 50);
+            title.Font = new Font("Verdana", 30F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            title.ForeColor = Color.Honeydew;
+            title.Location = new Point(16, 37);
             title.Name = "title";
-            title.Size = new Size(157, 60);
+            title.Size = new Size(211, 48);
             title.TabIndex = 1;
-            title.Text = "EhKasir";
+            title.Text = "Eh-Kasir";
             // 
             // panel1
             // 
-            panel1.BackColor = Color.Black;
+            panel1.BackColor = Color.MediumSeaGreen;
             panel1.Controls.Add(logoutBtn);
             panel1.Controls.Add(cashierLabel);
             panel1.Controls.Add(cashierTitle);
@@ -144,21 +148,25 @@
             panel1.Dock = DockStyle.Top;
             panel1.ForeColor = SystemColors.Control;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1042, 169);
+            panel1.Size = new Size(984, 120);
             panel1.TabIndex = 2;
             panel1.Paint += panel1_Paint;
             // 
             // logoutBtn
             // 
+            logoutBtn.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            logoutBtn.BackColor = Color.Honeydew;
+            logoutBtn.FlatStyle = FlatStyle.Popup;
+            logoutBtn.Font = new Font("Verdana", 13F);
             logoutBtn.ForeColor = SystemColors.ActiveCaptionText;
-            logoutBtn.Location = new Point(924, 0);
+            logoutBtn.Location = new Point(878, 14);
+            logoutBtn.Margin = new Padding(5);
             logoutBtn.Name = "logoutBtn";
-            logoutBtn.Size = new Size(118, 169);
+            logoutBtn.Size = new Size(95, 92);
             logoutBtn.TabIndex = 6;
             logoutBtn.Text = "Log Out";
-            logoutBtn.UseVisualStyleBackColor = true;
+            logoutBtn.UseVisualStyleBackColor = false;
             logoutBtn.Click += logoutBtn_Click;
             // 
             // cashierLabel
@@ -166,10 +174,11 @@
             cashierLabel.AutoSize = true;
             cashierLabel.BackColor = Color.Transparent;
             cashierLabel.FlatStyle = FlatStyle.Flat;
-            cashierLabel.Font = new Font("Poppins", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cashierLabel.Location = new Point(507, 65);
+            cashierLabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cashierLabel.ForeColor = Color.Honeydew;
+            cashierLabel.Location = new Point(588, 61);
             cashierLabel.Name = "cashierLabel";
-            cashierLabel.Size = new Size(308, 36);
+            cashierLabel.Size = new Size(230, 20);
             cashierLabel.TabIndex = 5;
             cashierLabel.Text = "Admin Kasir Tampan Berani";
             // 
@@ -178,10 +187,11 @@
             cashierTitle.AutoSize = true;
             cashierTitle.BackColor = Color.Transparent;
             cashierTitle.FlatStyle = FlatStyle.Flat;
-            cashierTitle.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cashierTitle.Location = new Point(507, 37);
+            cashierTitle.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cashierTitle.ForeColor = Color.Honeydew;
+            cashierTitle.Location = new Point(588, 40);
             cashierTitle.Name = "cashierTitle";
-            cashierTitle.Size = new Size(67, 36);
+            cashierTitle.Size = new Size(49, 20);
             cashierTitle.TabIndex = 4;
             cashierTitle.Text = "Kasir";
             // 
@@ -190,10 +200,11 @@
             tanggalLabel.AutoSize = true;
             tanggalLabel.BackColor = Color.Transparent;
             tanggalLabel.FlatStyle = FlatStyle.Flat;
-            tanggalLabel.Font = new Font("Poppins", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            tanggalLabel.Location = new Point(208, 67);
+            tanggalLabel.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            tanggalLabel.ForeColor = Color.Honeydew;
+            tanggalLabel.Location = new Point(332, 62);
             tanggalLabel.Name = "tanggalLabel";
-            tanggalLabel.Size = new Size(243, 36);
+            tanggalLabel.Size = new Size(195, 20);
             tanggalLabel.TabIndex = 3;
             tanggalLabel.Text = "Tuesday, 12 June 2024";
             // 
@@ -202,10 +213,11 @@
             tanggalTitle.AutoSize = true;
             tanggalTitle.BackColor = Color.Transparent;
             tanggalTitle.FlatStyle = FlatStyle.Flat;
-            tanggalTitle.Font = new Font("Poppins SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            tanggalTitle.Location = new Point(208, 37);
+            tanggalTitle.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            tanggalTitle.ForeColor = Color.Honeydew;
+            tanggalTitle.Location = new Point(332, 40);
             tanggalTitle.Name = "tanggalTitle";
-            tanggalTitle.Size = new Size(102, 36);
+            tanggalTitle.Size = new Size(73, 20);
             tanggalTitle.TabIndex = 2;
             tanggalTitle.Text = "Tanggal";
             // 
@@ -214,10 +226,11 @@
             itemPriceLabel.AutoSize = true;
             itemPriceLabel.BackColor = Color.Transparent;
             itemPriceLabel.FlatStyle = FlatStyle.Flat;
-            itemPriceLabel.Font = new Font("Poppins", 10F, FontStyle.Bold);
-            itemPriceLabel.Location = new Point(17, 140);
+            itemPriceLabel.Font = new Font("Verdana", 15F, FontStyle.Bold);
+            itemPriceLabel.ForeColor = Color.SeaGreen;
+            itemPriceLabel.Location = new Point(16, 117);
             itemPriceLabel.Name = "itemPriceLabel";
-            itemPriceLabel.Size = new Size(51, 30);
+            itemPriceLabel.Size = new Size(63, 25);
             itemPriceLabel.TabIndex = 7;
             itemPriceLabel.Text = "Rp 0";
             // 
@@ -226,10 +239,11 @@
             addProductTitle.AutoSize = true;
             addProductTitle.BackColor = Color.Transparent;
             addProductTitle.FlatStyle = FlatStyle.Flat;
-            addProductTitle.Font = new Font("Poppins", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addProductTitle.Location = new Point(12, 4);
+            addProductTitle.Font = new Font("Verdana", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            addProductTitle.ForeColor = Color.SeaGreen;
+            addProductTitle.Location = new Point(10, 12);
             addProductTitle.Name = "addProductTitle";
-            addProductTitle.Size = new Size(262, 60);
+            addProductTitle.Size = new Size(193, 29);
             addProductTitle.TabIndex = 6;
             addProductTitle.Text = "Tambah Item";
             // 
@@ -238,32 +252,31 @@
             totalLabel.AutoSize = true;
             totalLabel.BackColor = Color.Transparent;
             totalLabel.FlatStyle = FlatStyle.Flat;
-            totalLabel.Font = new Font("Poppins", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            totalLabel.Location = new Point(14, 96);
+            totalLabel.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            totalLabel.ForeColor = Color.SeaGreen;
+            totalLabel.Location = new Point(215, 18);
             totalLabel.Name = "totalLabel";
-            totalLabel.Size = new Size(110, 60);
+            totalLabel.Size = new Size(84, 31);
             totalLabel.TabIndex = 9;
             totalLabel.Text = "Rp. 0";
+            totalLabel.Click += totalLabel_Click;
             // 
             // totalTitle
             // 
             totalTitle.AutoSize = true;
             totalTitle.BackColor = Color.Transparent;
             totalTitle.FlatStyle = FlatStyle.Flat;
-            totalTitle.Font = new Font("Poppins", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            totalTitle.Location = new Point(6, 6);
+            totalTitle.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            totalTitle.ForeColor = Color.SeaGreen;
+            totalTitle.Location = new Point(15, 17);
             totalTitle.Name = "totalTitle";
-            totalTitle.Size = new Size(114, 60);
+            totalTitle.Size = new Size(185, 31);
             totalTitle.TabIndex = 8;
-            totalTitle.Text = "Total";
+            totalTitle.Text = "Total Belanja";
             // 
             // ItemsPanel
             // 
-            ItemsPanel.BackColor = SystemColors.Control;
-            ItemsPanel.Controls.Add(buyerMoneyTxt);
-            ItemsPanel.Controls.Add(buyerChangeTxt);
-            ItemsPanel.Controls.Add(label12);
-            ItemsPanel.Controls.Add(label11);
+            ItemsPanel.BackColor = Color.Transparent;
             ItemsPanel.Controls.Add(userManageBtn);
             ItemsPanel.Controls.Add(clearTransactionBtn);
             ItemsPanel.Controls.Add(historyBtn);
@@ -271,18 +284,108 @@
             ItemsPanel.Controls.Add(checkPriceBtn);
             ItemsPanel.Controls.Add(proccessBtn);
             ItemsPanel.Controls.Add(transactionDgv);
-            ItemsPanel.Dock = DockStyle.Fill;
-            ItemsPanel.Location = new Point(0, 379);
-            ItemsPanel.Margin = new Padding(3, 4, 3, 4);
+            ItemsPanel.Location = new Point(0, 285);
             ItemsPanel.Name = "ItemsPanel";
-            ItemsPanel.Size = new Size(1042, 443);
+            ItemsPanel.Size = new Size(984, 371);
             ItemsPanel.TabIndex = 4;
+            // 
+            // userManageBtn
+            // 
+            userManageBtn.BackColor = Color.MediumSpringGreen;
+            userManageBtn.Location = new Point(601, 5);
+            userManageBtn.Margin = new Padding(3, 2, 3, 2);
+            userManageBtn.Name = "userManageBtn";
+            userManageBtn.Size = new Size(166, 43);
+            userManageBtn.TabIndex = 15;
+            userManageBtn.Text = "User Manage";
+            userManageBtn.UseVisualStyleBackColor = false;
+            userManageBtn.Click += userManageBtn_Click;
+            // 
+            // clearTransactionBtn
+            // 
+            clearTransactionBtn.BackColor = Color.MediumSpringGreen;
+            clearTransactionBtn.Location = new Point(16, 5);
+            clearTransactionBtn.Margin = new Padding(3, 2, 3, 2);
+            clearTransactionBtn.Name = "clearTransactionBtn";
+            clearTransactionBtn.Size = new Size(82, 43);
+            clearTransactionBtn.TabIndex = 14;
+            clearTransactionBtn.Text = "Clear";
+            clearTransactionBtn.UseVisualStyleBackColor = false;
+            clearTransactionBtn.Click += clearTransactionBtn_Click;
+            // 
+            // historyBtn
+            // 
+            historyBtn.BackColor = Color.MediumSpringGreen;
+            historyBtn.Font = new Font("Verdana", 10F);
+            historyBtn.Location = new Point(786, 115);
+            historyBtn.Name = "historyBtn";
+            historyBtn.Size = new Size(178, 53);
+            historyBtn.TabIndex = 13;
+            historyBtn.Text = "Histori";
+            historyBtn.UseVisualStyleBackColor = false;
+            historyBtn.Click += historyBtn_Click;
+            // 
+            // inventoriBtn
+            // 
+            inventoriBtn.BackColor = Color.MediumSpringGreen;
+            inventoriBtn.Font = new Font("Verdana", 10F);
+            inventoriBtn.Location = new Point(786, 177);
+            inventoriBtn.Name = "inventoriBtn";
+            inventoriBtn.Size = new Size(178, 53);
+            inventoriBtn.TabIndex = 12;
+            inventoriBtn.Text = "Inventori";
+            inventoriBtn.UseVisualStyleBackColor = false;
+            inventoriBtn.Click += inventoriBtn_Click;
+            // 
+            // checkPriceBtn
+            // 
+            checkPriceBtn.BackColor = Color.MediumSpringGreen;
+            checkPriceBtn.Font = new Font("Verdana", 10F);
+            checkPriceBtn.Location = new Point(786, 54);
+            checkPriceBtn.Name = "checkPriceBtn";
+            checkPriceBtn.Size = new Size(178, 53);
+            checkPriceBtn.TabIndex = 11;
+            checkPriceBtn.Text = "Cek Harga";
+            checkPriceBtn.UseVisualStyleBackColor = false;
+            checkPriceBtn.Click += checkPriceBtn_Click;
+            // 
+            // proccessBtn
+            // 
+            proccessBtn.BackColor = Color.SeaGreen;
+            proccessBtn.Font = new Font("Verdana", 18F);
+            proccessBtn.ForeColor = Color.Honeydew;
+            proccessBtn.Location = new Point(786, 242);
+            proccessBtn.Name = "proccessBtn";
+            proccessBtn.Size = new Size(178, 112);
+            proccessBtn.TabIndex = 8;
+            proccessBtn.Text = "Proses";
+            proccessBtn.UseVisualStyleBackColor = false;
+            proccessBtn.Click += proccessBtn_Click;
+            // 
+            // transactionDgv
+            // 
+            transactionDgv.AllowUserToAddRows = false;
+            transactionDgv.AllowUserToDeleteRows = false;
+            transactionDgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            transactionDgv.BackgroundColor = Color.Honeydew;
+            transactionDgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            transactionDgv.Location = new Point(17, 54);
+            transactionDgv.Name = "transactionDgv";
+            transactionDgv.RowHeadersWidth = 51;
+            transactionDgv.RowTemplate.Height = 24;
+            transactionDgv.Size = new Size(750, 300);
+            transactionDgv.TabIndex = 0;
+            transactionDgv.CellClick += transactionDgv_CellClick;
+            transactionDgv.CellContentClick += transactionDgv_CellContentClick;
+            transactionDgv.CellPainting += transactionDgv_CellPainting;
             // 
             // buyerMoneyTxt
             // 
-            buyerMoneyTxt.Location = new Point(253, 322);
+            buyerMoneyTxt.Font = new Font("Verdana", 12F);
+            buyerMoneyTxt.Location = new Point(221, 68);
+            buyerMoneyTxt.Margin = new Padding(3, 2, 3, 2);
             buyerMoneyTxt.Name = "buyerMoneyTxt";
-            buyerMoneyTxt.Size = new Size(551, 27);
+            buyerMoneyTxt.Size = new Size(274, 27);
             buyerMoneyTxt.TabIndex = 18;
             buyerMoneyTxt.TextChanged += buyerMoneyTxt_TextChanged;
             // 
@@ -291,10 +394,11 @@
             buyerChangeTxt.AutoSize = true;
             buyerChangeTxt.BackColor = Color.Transparent;
             buyerChangeTxt.FlatStyle = FlatStyle.Flat;
-            buyerChangeTxt.Font = new Font("Poppins", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buyerChangeTxt.Location = new Point(253, 361);
+            buyerChangeTxt.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buyerChangeTxt.ForeColor = Color.SeaGreen;
+            buyerChangeTxt.Location = new Point(218, 110);
             buyerChangeTxt.Name = "buyerChangeTxt";
-            buyerChangeTxt.Size = new Size(110, 60);
+            buyerChangeTxt.Size = new Size(74, 29);
             buyerChangeTxt.TabIndex = 17;
             buyerChangeTxt.Text = "Rp. 0";
             // 
@@ -303,10 +407,11 @@
             label12.AutoSize = true;
             label12.BackColor = Color.Transparent;
             label12.FlatStyle = FlatStyle.Flat;
-            label12.Font = new Font("Poppins", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.Location = new Point(12, 367);
+            label12.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.ForeColor = Color.SeaGreen;
+            label12.Location = new Point(18, 111);
             label12.Name = "label12";
-            label12.Size = new Size(143, 50);
+            label12.Size = new Size(109, 29);
             label12.TabIndex = 16;
             label12.Text = "Kembali";
             // 
@@ -315,103 +420,23 @@
             label11.AutoSize = true;
             label11.BackColor = Color.Transparent;
             label11.FlatStyle = FlatStyle.Flat;
-            label11.Font = new Font("Poppins", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.Location = new Point(12, 310);
+            label11.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.ForeColor = Color.SeaGreen;
+            label11.Location = new Point(18, 68);
             label11.Name = "label11";
-            label11.Size = new Size(216, 50);
+            label11.Size = new Size(164, 29);
             label11.TabIndex = 10;
             label11.Text = "Jumlah Uang";
-            // 
-            // userManageBtn
-            // 
-            userManageBtn.Location = new Point(584, 7);
-            userManageBtn.Name = "userManageBtn";
-            userManageBtn.Size = new Size(220, 29);
-            userManageBtn.TabIndex = 15;
-            userManageBtn.Text = "User Manage";
-            userManageBtn.UseVisualStyleBackColor = true;
-            userManageBtn.Click += userManageBtn_Click;
-            // 
-            // clearTransactionBtn
-            // 
-            clearTransactionBtn.Location = new Point(12, 7);
-            clearTransactionBtn.Name = "clearTransactionBtn";
-            clearTransactionBtn.Size = new Size(94, 29);
-            clearTransactionBtn.TabIndex = 14;
-            clearTransactionBtn.Text = "Clear";
-            clearTransactionBtn.UseVisualStyleBackColor = true;
-            clearTransactionBtn.Click += clearTransactionBtn_Click;
-            // 
-            // historyBtn
-            // 
-            historyBtn.Location = new Point(810, 116);
-            historyBtn.Margin = new Padding(3, 4, 3, 4);
-            historyBtn.Name = "historyBtn";
-            historyBtn.Size = new Size(220, 71);
-            historyBtn.TabIndex = 13;
-            historyBtn.Text = "Histori";
-            historyBtn.UseVisualStyleBackColor = true;
-            historyBtn.Click += historyBtn_Click;
-            // 
-            // inventoriBtn
-            // 
-            inventoriBtn.Location = new Point(810, 195);
-            inventoriBtn.Margin = new Padding(3, 4, 3, 4);
-            inventoriBtn.Name = "inventoriBtn";
-            inventoriBtn.Size = new Size(220, 71);
-            inventoriBtn.TabIndex = 12;
-            inventoriBtn.Text = "Inventori";
-            inventoriBtn.UseVisualStyleBackColor = true;
-            inventoriBtn.Click += inventoriBtn_Click;
-            // 
-            // checkPriceBtn
-            // 
-            checkPriceBtn.Location = new Point(810, 37);
-            checkPriceBtn.Margin = new Padding(3, 4, 3, 4);
-            checkPriceBtn.Name = "checkPriceBtn";
-            checkPriceBtn.Size = new Size(220, 71);
-            checkPriceBtn.TabIndex = 11;
-            checkPriceBtn.Text = "Cek Harga";
-            checkPriceBtn.UseVisualStyleBackColor = true;
-            checkPriceBtn.Click += checkPriceBtn_Click;
-            // 
-            // proccessBtn
-            // 
-            proccessBtn.Location = new Point(810, 274);
-            proccessBtn.Margin = new Padding(3, 4, 3, 4);
-            proccessBtn.Name = "proccessBtn";
-            proccessBtn.Size = new Size(220, 150);
-            proccessBtn.TabIndex = 8;
-            proccessBtn.Text = "Proses";
-            proccessBtn.UseVisualStyleBackColor = true;
-            proccessBtn.Click += proccessBtn_Click;
-            // 
-            // transactionDgv
-            // 
-            transactionDgv.AllowUserToAddRows = false;
-            transactionDgv.AllowUserToDeleteRows = false;
-            transactionDgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            transactionDgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            transactionDgv.Location = new Point(12, 37);
-            transactionDgv.Margin = new Padding(3, 4, 3, 4);
-            transactionDgv.Name = "transactionDgv";
-            transactionDgv.RowHeadersWidth = 51;
-            transactionDgv.RowTemplate.Height = 24;
-            transactionDgv.Size = new Size(792, 229);
-            transactionDgv.TabIndex = 0;
-            transactionDgv.CellClick += transactionDgv_CellClick;
-            transactionDgv.CellContentClick += transactionDgv_CellContentClick;
-            transactionDgv.CellPainting += transactionDgv_CellPainting;
             // 
             // kasirSplitContainer
             // 
             kasirSplitContainer.Dock = DockStyle.Top;
-            kasirSplitContainer.Location = new Point(0, 169);
-            kasirSplitContainer.Margin = new Padding(3, 4, 3, 4);
+            kasirSplitContainer.Location = new Point(0, 120);
             kasirSplitContainer.Name = "kasirSplitContainer";
             // 
             // kasirSplitContainer.Panel1
             // 
+            kasirSplitContainer.Panel1.BackColor = Color.Transparent;
             kasirSplitContainer.Panel1.Controls.Add(productsCmb);
             kasirSplitContainer.Panel1.Controls.Add(itemPriceLabel);
             kasirSplitContainer.Panel1.Controls.Add(addProductTitle);
@@ -419,104 +444,139 @@
             // 
             // kasirSplitContainer.Panel2
             // 
-            kasirSplitContainer.Panel2.Controls.Add(maskedTextBox1);
+            kasirSplitContainer.Panel2.BackColor = Color.Transparent;
+            kasirSplitContainer.Panel2.Controls.Add(buyerMoneyTxt);
             kasirSplitContainer.Panel2.Controls.Add(totalLabel);
+            kasirSplitContainer.Panel2.Controls.Add(buyerChangeTxt);
             kasirSplitContainer.Panel2.Controls.Add(totalTitle);
-            kasirSplitContainer.Size = new Size(1042, 210);
-            kasirSplitContainer.SplitterDistance = 425;
+            kasirSplitContainer.Panel2.Controls.Add(label12);
+            kasirSplitContainer.Panel2.Controls.Add(label11);
+            kasirSplitContainer.Size = new Size(984, 158);
+            kasirSplitContainer.SplitterDistance = 399;
             kasirSplitContainer.TabIndex = 5;
             // 
             // productsCmb
             // 
             productsCmb.FormattingEnabled = true;
-            productsCmb.Location = new Point(18, 109);
+            productsCmb.Location = new Point(16, 82);
+            productsCmb.Margin = new Padding(3, 2, 3, 2);
             productsCmb.Name = "productsCmb";
-            productsCmb.Size = new Size(301, 28);
+            productsCmb.Size = new Size(264, 22);
             productsCmb.TabIndex = 8;
             productsCmb.SelectedIndexChanged += productsCmb_SelectedIndexChanged;
             // 
             // KasirScreen
             // 
+            KasirScreen.BackColor = Color.White;
             KasirScreen.Controls.Add(ItemsPanel);
             KasirScreen.Controls.Add(kasirSplitContainer);
             KasirScreen.Controls.Add(panel1);
             KasirScreen.Dock = DockStyle.Fill;
+            KasirScreen.Font = new Font("Verdana", 9F);
             KasirScreen.Location = new Point(0, 0);
-            KasirScreen.Margin = new Padding(3, 4, 3, 4);
             KasirScreen.Name = "KasirScreen";
-            KasirScreen.Size = new Size(1042, 822);
+            KasirScreen.Size = new Size(984, 657);
             KasirScreen.TabIndex = 10;
             // 
             // loginScreen
             // 
-            loginScreen.Controls.Add(label2);
-            loginScreen.Controls.Add(label1);
-            loginScreen.Controls.Add(passwordTxt);
-            loginScreen.Controls.Add(usernameTxt);
-            loginScreen.Controls.Add(titleText);
-            loginScreen.Controls.Add(loginBtn);
+            loginScreen.BackColor = Color.White;
+            loginScreen.BackgroundImageLayout = ImageLayout.Stretch;
+            loginScreen.Controls.Add(loginpanel);
             loginScreen.Dock = DockStyle.Fill;
             loginScreen.Location = new Point(0, 0);
-            loginScreen.Margin = new Padding(3, 4, 3, 4);
             loginScreen.Name = "loginScreen";
-            loginScreen.Size = new Size(1042, 822);
+            loginScreen.Padding = new Padding(5);
+            loginScreen.Size = new Size(984, 657);
             loginScreen.TabIndex = 10;
             loginScreen.Paint += loginScreen_Paint;
+            // 
+            // loginpanel
+            // 
+            loginpanel.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            loginpanel.BackColor = Color.MediumSpringGreen;
+            loginpanel.Controls.Add(label13);
+            loginpanel.Controls.Add(label2);
+            loginpanel.Controls.Add(label1);
+            loginpanel.Controls.Add(passwordTxt);
+            loginpanel.Controls.Add(usernameTxt);
+            loginpanel.Controls.Add(titleText);
+            loginpanel.Controls.Add(loginBtn);
+            loginpanel.Font = new Font("Verdana", 9F);
+            loginpanel.Location = new Point(337, 114);
+            loginpanel.Margin = new Padding(0);
+            loginpanel.Name = "loginpanel";
+            loginpanel.Padding = new Padding(10, 10, 10, 20);
+            loginpanel.Size = new Size(300, 346);
+            loginpanel.TabIndex = 6;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Verdana", 5F);
+            label13.Location = new Point(134, 307);
+            label13.Name = "label13";
+            label13.Size = new Size(31, 24);
+            label13.TabIndex = 6;
+            label13.Text = "Created\r\nby\r\nHAVOC";
+            label13.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(390, 372);
+            label2.Location = new Point(51, 158);
             label2.Name = "label2";
-            label2.Size = new Size(70, 20);
+            label2.Size = new Size(69, 14);
             label2.TabIndex = 5;
             label2.Text = "Password";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(390, 305);
+            label1.Location = new Point(52, 95);
             label1.Name = "label1";
-            label1.Size = new Size(75, 20);
+            label1.Size = new Size(71, 14);
             label1.TabIndex = 4;
             label1.Text = "Username";
             // 
             // passwordTxt
             // 
-            passwordTxt.Location = new Point(393, 396);
-            passwordTxt.Margin = new Padding(3, 4, 3, 4);
+            passwordTxt.Location = new Point(51, 176);
             passwordTxt.Name = "passwordTxt";
             passwordTxt.PasswordChar = '*';
-            passwordTxt.Size = new Size(214, 27);
+            passwordTxt.Size = new Size(200, 22);
             passwordTxt.TabIndex = 3;
             // 
             // usernameTxt
             // 
-            usernameTxt.Location = new Point(393, 335);
-            usernameTxt.Margin = new Padding(3, 4, 3, 4);
+            usernameTxt.Location = new Point(51, 113);
             usernameTxt.Name = "usernameTxt";
-            usernameTxt.Size = new Size(214, 27);
+            usernameTxt.Size = new Size(200, 22);
             usernameTxt.TabIndex = 2;
             // 
             // titleText
             // 
             titleText.AutoSize = true;
-            titleText.Font = new Font("Poppins SemiBold", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            titleText.Location = new Point(408, 198);
+            titleText.Font = new Font("Verdana", 23.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            titleText.Location = new Point(72, 35);
             titleText.Name = "titleText";
-            titleText.Size = new Size(167, 65);
+            titleText.Size = new Size(164, 38);
             titleText.TabIndex = 1;
-            titleText.Text = "EhKasir";
+            titleText.Text = "Eh-Kasir";
             // 
             // loginBtn
             // 
-            loginBtn.Location = new Point(393, 452);
-            loginBtn.Margin = new Padding(3, 4, 3, 4);
+            loginBtn.Anchor = AnchorStyles.Bottom;
+            loginBtn.BackColor = Color.SeaGreen;
+            loginBtn.FlatStyle = FlatStyle.Popup;
+            loginBtn.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            loginBtn.ForeColor = SystemColors.Control;
+            loginBtn.Location = new Point(51, 235);
             loginBtn.Name = "loginBtn";
-            loginBtn.Size = new Size(214, 89);
+            loginBtn.Size = new Size(200, 50);
             loginBtn.TabIndex = 0;
             loginBtn.Text = "Login";
-            loginBtn.UseVisualStyleBackColor = true;
+            loginBtn.UseVisualStyleBackColor = false;
             loginBtn.Click += loginBtn_Click;
             // 
             // inventoriScreen
@@ -534,15 +594,17 @@
             inventoriScreen.Controls.Add(productsDataGrid);
             inventoriScreen.Dock = DockStyle.Fill;
             inventoriScreen.Location = new Point(0, 0);
+            inventoriScreen.Margin = new Padding(3, 2, 3, 2);
             inventoriScreen.Name = "inventoriScreen";
-            inventoriScreen.Size = new Size(1042, 822);
+            inventoriScreen.Size = new Size(984, 657);
             inventoriScreen.TabIndex = 13;
             // 
             // saveProductBtn
             // 
-            saveProductBtn.Location = new Point(892, 167);
+            saveProductBtn.Location = new Point(780, 125);
+            saveProductBtn.Margin = new Padding(3, 2, 3, 2);
             saveProductBtn.Name = "saveProductBtn";
-            saveProductBtn.Size = new Size(94, 29);
+            saveProductBtn.Size = new Size(82, 22);
             saveProductBtn.TabIndex = 10;
             saveProductBtn.Text = "Save";
             saveProductBtn.UseVisualStyleBackColor = true;
@@ -550,9 +612,10 @@
             // 
             // inventoryBackBtn
             // 
-            inventoryBackBtn.Location = new Point(45, 28);
+            inventoryBackBtn.Location = new Point(39, 21);
+            inventoryBackBtn.Margin = new Padding(3, 2, 3, 2);
             inventoryBackBtn.Name = "inventoryBackBtn";
-            inventoryBackBtn.Size = new Size(94, 29);
+            inventoryBackBtn.Size = new Size(82, 22);
             inventoryBackBtn.TabIndex = 9;
             inventoryBackBtn.Text = "Kembali";
             inventoryBackBtn.UseVisualStyleBackColor = true;
@@ -560,65 +623,69 @@
             // 
             // productQuantityTxt
             // 
-            productQuantityTxt.Location = new Point(498, 169);
+            productQuantityTxt.Location = new Point(436, 127);
+            productQuantityTxt.Margin = new Padding(3, 2, 3, 2);
             productQuantityTxt.Name = "productQuantityTxt";
-            productQuantityTxt.Size = new Size(125, 27);
+            productQuantityTxt.Size = new Size(110, 23);
             productQuantityTxt.TabIndex = 8;
             // 
             // productPriceTxt
             // 
-            productPriceTxt.Location = new Point(337, 169);
+            productPriceTxt.Location = new Point(295, 127);
+            productPriceTxt.Margin = new Padding(3, 2, 3, 2);
             productPriceTxt.Name = "productPriceTxt";
-            productPriceTxt.Size = new Size(125, 27);
+            productPriceTxt.Size = new Size(110, 23);
             productPriceTxt.TabIndex = 7;
             // 
             // productNameTxt
             // 
-            productNameTxt.Location = new Point(188, 169);
+            productNameTxt.Location = new Point(164, 127);
+            productNameTxt.Margin = new Padding(3, 2, 3, 2);
             productNameTxt.Name = "productNameTxt";
-            productNameTxt.Size = new Size(125, 27);
+            productNameTxt.Size = new Size(110, 23);
             productNameTxt.TabIndex = 6;
             // 
             // productCodeTxt
             // 
-            productCodeTxt.Location = new Point(45, 169);
+            productCodeTxt.Location = new Point(39, 127);
+            productCodeTxt.Margin = new Padding(3, 2, 3, 2);
             productCodeTxt.Name = "productCodeTxt";
-            productCodeTxt.Size = new Size(125, 27);
+            productCodeTxt.Size = new Size(110, 23);
             productCodeTxt.TabIndex = 5;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(498, 146);
+            label6.Location = new Point(436, 110);
             label6.Name = "label6";
-            label6.Size = new Size(55, 20);
+            label6.Size = new Size(45, 15);
             label6.TabIndex = 4;
             label6.Text = "Jumlah";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(337, 146);
+            label5.Location = new Point(295, 110);
             label5.Name = "label5";
-            label5.Size = new Size(50, 20);
+            label5.Size = new Size(39, 15);
             label5.TabIndex = 3;
             label5.Text = "Harga";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(45, 146);
+            label4.Location = new Point(39, 110);
             label4.Name = "label4";
-            label4.Size = new Size(44, 20);
+            label4.Size = new Size(34, 15);
             label4.TabIndex = 2;
             label4.Text = "Kode";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(188, 146);
+            label3.Location = new Point(164, 110);
             label3.Name = "label3";
-            label3.Size = new Size(99, 20);
+            label3.Size = new Size(80, 15);
             label3.TabIndex = 1;
             label3.Text = "Nama Produk";
             // 
@@ -628,11 +695,12 @@
             productsDataGrid.AllowUserToDeleteRows = false;
             productsDataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             productsDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            productsDataGrid.Location = new Point(45, 236);
+            productsDataGrid.Location = new Point(39, 177);
+            productsDataGrid.Margin = new Padding(3, 2, 3, 2);
             productsDataGrid.Name = "productsDataGrid";
             productsDataGrid.RowHeadersWidth = 51;
             productsDataGrid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            productsDataGrid.Size = new Size(941, 567);
+            productsDataGrid.Size = new Size(823, 425);
             productsDataGrid.TabIndex = 0;
             productsDataGrid.CellClick += productsDataGrid_CellClick;
             productsDataGrid.CellContentClick += productsDataGrid_CellContentClick;
@@ -644,15 +712,17 @@
             historyScreen.Controls.Add(historyDgv);
             historyScreen.Dock = DockStyle.Fill;
             historyScreen.Location = new Point(0, 0);
+            historyScreen.Margin = new Padding(3, 2, 3, 2);
             historyScreen.Name = "historyScreen";
-            historyScreen.Size = new Size(1042, 822);
+            historyScreen.Size = new Size(984, 657);
             historyScreen.TabIndex = 14;
             // 
             // reloadHistoryBtn
             // 
-            reloadHistoryBtn.Location = new Point(892, 70);
+            reloadHistoryBtn.Location = new Point(780, 52);
+            reloadHistoryBtn.Margin = new Padding(3, 2, 3, 2);
             reloadHistoryBtn.Name = "reloadHistoryBtn";
-            reloadHistoryBtn.Size = new Size(94, 29);
+            reloadHistoryBtn.Size = new Size(82, 22);
             reloadHistoryBtn.TabIndex = 10;
             reloadHistoryBtn.Text = "Reload";
             reloadHistoryBtn.UseVisualStyleBackColor = true;
@@ -660,9 +730,10 @@
             // 
             // historyBackBtn
             // 
-            historyBackBtn.Location = new Point(45, 28);
+            historyBackBtn.Location = new Point(39, 21);
+            historyBackBtn.Margin = new Padding(3, 2, 3, 2);
             historyBackBtn.Name = "historyBackBtn";
-            historyBackBtn.Size = new Size(94, 29);
+            historyBackBtn.Size = new Size(82, 22);
             historyBackBtn.TabIndex = 9;
             historyBackBtn.Text = "Kembali";
             historyBackBtn.UseVisualStyleBackColor = true;
@@ -674,11 +745,12 @@
             historyDgv.AllowUserToDeleteRows = false;
             historyDgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             historyDgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            historyDgv.Location = new Point(45, 114);
+            historyDgv.Location = new Point(39, 86);
+            historyDgv.Margin = new Padding(3, 2, 3, 2);
             historyDgv.Name = "historyDgv";
             historyDgv.RowHeadersWidth = 51;
             historyDgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            historyDgv.Size = new Size(941, 689);
+            historyDgv.Size = new Size(823, 517);
             historyDgv.TabIndex = 0;
             // 
             // userScreen
@@ -696,23 +768,26 @@
             userScreen.Controls.Add(userManageDgv);
             userScreen.Dock = DockStyle.Fill;
             userScreen.Location = new Point(0, 0);
+            userScreen.Margin = new Padding(3, 2, 3, 2);
             userScreen.Name = "userScreen";
-            userScreen.Size = new Size(1042, 822);
+            userScreen.Size = new Size(984, 657);
             userScreen.TabIndex = 15;
             // 
             // userManageLevelCmb
             // 
             userManageLevelCmb.FormattingEnabled = true;
-            userManageLevelCmb.Location = new Point(498, 167);
+            userManageLevelCmb.Location = new Point(436, 125);
+            userManageLevelCmb.Margin = new Padding(3, 2, 3, 2);
             userManageLevelCmb.Name = "userManageLevelCmb";
-            userManageLevelCmb.Size = new Size(151, 28);
+            userManageLevelCmb.Size = new Size(133, 23);
             userManageLevelCmb.TabIndex = 11;
             // 
             // userManageSaveBtn
             // 
-            userManageSaveBtn.Location = new Point(892, 167);
+            userManageSaveBtn.Location = new Point(780, 125);
+            userManageSaveBtn.Margin = new Padding(3, 2, 3, 2);
             userManageSaveBtn.Name = "userManageSaveBtn";
-            userManageSaveBtn.Size = new Size(94, 29);
+            userManageSaveBtn.Size = new Size(82, 22);
             userManageSaveBtn.TabIndex = 10;
             userManageSaveBtn.Text = "Save";
             userManageSaveBtn.UseVisualStyleBackColor = true;
@@ -720,9 +795,10 @@
             // 
             // userManageBackBtn
             // 
-            userManageBackBtn.Location = new Point(45, 28);
+            userManageBackBtn.Location = new Point(39, 21);
+            userManageBackBtn.Margin = new Padding(3, 2, 3, 2);
             userManageBackBtn.Name = "userManageBackBtn";
-            userManageBackBtn.Size = new Size(94, 29);
+            userManageBackBtn.Size = new Size(82, 22);
             userManageBackBtn.TabIndex = 9;
             userManageBackBtn.Text = "Kembali";
             userManageBackBtn.UseVisualStyleBackColor = true;
@@ -730,59 +806,62 @@
             // 
             // userManageNameTxt
             // 
-            userManageNameTxt.Location = new Point(337, 169);
+            userManageNameTxt.Location = new Point(295, 127);
+            userManageNameTxt.Margin = new Padding(3, 2, 3, 2);
             userManageNameTxt.Name = "userManageNameTxt";
-            userManageNameTxt.Size = new Size(125, 27);
+            userManageNameTxt.Size = new Size(110, 23);
             userManageNameTxt.TabIndex = 7;
             // 
             // userManagePasswordTxt
             // 
-            userManagePasswordTxt.Location = new Point(188, 169);
+            userManagePasswordTxt.Location = new Point(164, 127);
+            userManagePasswordTxt.Margin = new Padding(3, 2, 3, 2);
             userManagePasswordTxt.Name = "userManagePasswordTxt";
             userManagePasswordTxt.PasswordChar = '*';
-            userManagePasswordTxt.Size = new Size(125, 27);
+            userManagePasswordTxt.Size = new Size(110, 23);
             userManagePasswordTxt.TabIndex = 6;
             // 
             // userManageUsernameTxt
             // 
-            userManageUsernameTxt.Location = new Point(45, 169);
+            userManageUsernameTxt.Location = new Point(39, 127);
+            userManageUsernameTxt.Margin = new Padding(3, 2, 3, 2);
             userManageUsernameTxt.Name = "userManageUsernameTxt";
-            userManageUsernameTxt.Size = new Size(125, 27);
+            userManageUsernameTxt.Size = new Size(110, 23);
             userManageUsernameTxt.TabIndex = 5;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(498, 146);
+            label7.Location = new Point(436, 110);
             label7.Name = "label7";
-            label7.Size = new Size(48, 20);
+            label7.Size = new Size(39, 15);
             label7.TabIndex = 4;
             label7.Text = "Tugas";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(337, 146);
+            label8.Location = new Point(295, 110);
             label8.Name = "label8";
-            label8.Size = new Size(49, 20);
+            label8.Size = new Size(39, 15);
             label8.TabIndex = 3;
             label8.Text = "Nama";
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(45, 146);
+            label9.Location = new Point(39, 110);
             label9.Name = "label9";
-            label9.Size = new Size(75, 20);
+            label9.Size = new Size(60, 15);
             label9.TabIndex = 2;
             label9.Text = "Username";
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(188, 146);
+            label10.Location = new Point(164, 110);
             label10.Name = "label10";
-            label10.Size = new Size(70, 20);
+            label10.Size = new Size(57, 15);
             label10.TabIndex = 1;
             label10.Text = "Password";
             // 
@@ -791,34 +870,26 @@
             userManageDgv.AllowUserToDeleteRows = false;
             userManageDgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             userManageDgv.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            userManageDgv.Location = new Point(45, 236);
+            userManageDgv.Location = new Point(39, 177);
+            userManageDgv.Margin = new Padding(3, 2, 3, 2);
             userManageDgv.Name = "userManageDgv";
             userManageDgv.RowHeadersWidth = 51;
             userManageDgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            userManageDgv.Size = new Size(941, 567);
+            userManageDgv.Size = new Size(823, 425);
             userManageDgv.TabIndex = 0;
             userManageDgv.CellClick += userManageDgv_CellClick;
             // 
-            // maskedTextBox1
-            // 
-            maskedTextBox1.Location = new Point(255, 123);
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(125, 27);
-            maskedTextBox1.TabIndex = 10;
-            // 
             // homeForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1042, 822);
+            ClientSize = new Size(984, 657);
             Controls.Add(KasirScreen);
+            Controls.Add(loginScreen);
             Controls.Add(userScreen);
             Controls.Add(historyScreen);
-            Controls.Add(loginScreen);
             Controls.Add(inventoriScreen);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            Margin = new Padding(3, 4, 3, 4);
-            MaximizeBox = false;
             Name = "homeForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "KasirPBO";
@@ -826,7 +897,6 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ItemsPanel.ResumeLayout(false);
-            ItemsPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)transactionDgv).EndInit();
             kasirSplitContainer.Panel1.ResumeLayout(false);
             kasirSplitContainer.Panel1.PerformLayout();
@@ -836,7 +906,8 @@
             kasirSplitContainer.ResumeLayout(false);
             KasirScreen.ResumeLayout(false);
             loginScreen.ResumeLayout(false);
-            loginScreen.PerformLayout();
+            loginpanel.ResumeLayout(false);
+            loginpanel.PerformLayout();
             inventoriScreen.ResumeLayout(false);
             inventoriScreen.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)productsDataGrid).EndInit();
@@ -912,7 +983,8 @@
         private Label buyerChangeTxt;
         private Label label12;
         private Label label11;
-        private MaskedTextBox maskedTextBox1;
+        private Panel loginpanel;
+        private Label label13;
     }
 }
 
