@@ -17,7 +17,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace KasirPBO
 {
-    
+
     public partial class homeForm : Form
     {
         int total = 0;
@@ -470,6 +470,12 @@ namespace KasirPBO
                 return;
             }
 
+            if (int.TryParse(buyerChangeTxt.Text, out int uangPembeli) == false || uangPembeli < 0)
+            {
+                MessageBox.Show("Jumlah uang pembeli tidak cukup untuk membayar total transaksi.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             string itemsJson = JsonSerializer.Serialize(
                  transactionProducts.Select(p => new
                  {
@@ -750,6 +756,16 @@ namespace KasirPBO
         }
 
         private void totalLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void inventoriScreen_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ItemsPanel_Paint(object sender, PaintEventArgs e)
         {
 
         }

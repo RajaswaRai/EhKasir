@@ -1,45 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\EhKasir-main\\",
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\EhKasirv2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|c:\\users\\user\\source\\repos\\ehkasir-main\\ehkasir\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|c:\\users\\user\\source\\repos\\ehkasirv2\\ehkasir\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|solutionrelative:ehkasir\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|C:\\Users\\User\\source\\repos\\EhKasir-main\\ehkasir\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|c:\\users\\user\\source\\repos\\ehkasirv2\\ehkasir\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|solutionrelative:ehkasir\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|c:\\users\\user\\source\\repos\\ehkasir-main\\ehkasir\\res\\model\\transactionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|solutionrelative:ehkasir\\res\\model\\transactionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|c:\\users\\user\\source\\repos\\ehkasirv2\\ehkasir\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|solutionrelative:ehkasir\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|c:\\users\\user\\source\\repos\\ehkasir-main\\ehkasir\\res\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|solutionrelative:ehkasir\\res\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|c:\\users\\user\\source\\repos\\ehkasir-main\\ehkasir\\res\\roundedbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|solutionrelative:ehkasir\\res\\roundedbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|c:\\users\\user\\source\\repos\\ehkasir-main\\ehkasir\\res\\sqlitedataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|c:\\users\\user\\source\\repos\\ehkasirv2\\ehkasir\\res\\sqlitedataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|solutionrelative:ehkasir\\res\\sqlitedataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|c:\\users\\user\\source\\repos\\ehkasir-main\\ehkasir\\res\\model\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|c:\\users\\user\\source\\repos\\ehkasirv2\\ehkasir\\res\\model\\transactionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|solutionrelative:ehkasir\\res\\model\\transactionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|c:\\users\\user\\source\\repos\\ehkasirv2\\ehkasir\\res\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|solutionrelative:ehkasir\\res\\passwordhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|c:\\users\\user\\source\\repos\\ehkasirv2\\ehkasir\\res\\roundedbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|solutionrelative:ehkasir\\res\\roundedbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|c:\\users\\user\\source\\repos\\ehkasirv2\\ehkasir\\res\\model\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|solutionrelative:ehkasir\\res\\model\\usermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|c:\\users\\user\\source\\repos\\ehkasir-main\\ehkasir\\res\\model\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|c:\\users\\user\\source\\repos\\ehkasirv2\\ehkasir\\res\\model\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|solutionrelative:ehkasir\\res\\model\\productmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|c:\\users\\user\\source\\repos\\ehkasir-main\\ehkasir\\checkpriceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|c:\\users\\user\\source\\repos\\ehkasirv2\\ehkasir\\checkpriceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|solutionrelative:ehkasir\\checkpriceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|c:\\users\\user\\source\\repos\\ehkasir-main\\ehkasir\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|c:\\users\\user\\source\\repos\\ehkasirv2\\ehkasir\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4FEB043-325D-480A-A8DD-42586C1D61E9}|EhKasir\\EhKasir.csproj|solutionrelative:ehkasir\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -50,8 +54,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 9,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\res\\Model\\UserModel.cs",
+              "RelativeDocumentMoniker": "EhKasir\\res\\Model\\UserModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\res\\Model\\UserModel.cs",
+              "RelativeToolTip": "EhKasir\\res\\Model\\UserModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T04:04:52.494Z",
+              "IsPinned": true
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{25f7e850-ffa1-11d0-b63f-00a0c922e851}"
@@ -70,114 +87,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RoundedButton.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\res\\RoundedButton.cs",
-              "RelativeDocumentMoniker": "EhKasir\\res\\RoundedButton.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\res\\RoundedButton.cs",
-              "RelativeToolTip": "EhKasir\\res\\RoundedButton.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T06:50:51.717Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TransactionModel.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\res\\Model\\TransactionModel.cs",
-              "RelativeDocumentMoniker": "EhKasir\\res\\Model\\TransactionModel.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\res\\Model\\TransactionModel.cs",
-              "RelativeToolTip": "EhKasir\\res\\Model\\TransactionModel.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAkwBIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T00:52:59.852Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\Form1.cs",
-              "RelativeDocumentMoniker": "EhKasir\\Form1.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\Form1.cs [Design]",
-              "RelativeToolTip": "EhKasir\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T10:25:10.66Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\Form1.cs",
-              "RelativeDocumentMoniker": "EhKasir\\Form1.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\Form1.cs",
-              "RelativeToolTip": "EhKasir\\Form1.cs",
-              "ViewState": "AgIAAFQCAAAAAAAAAAArwFsCAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-27T09:15:38.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SqliteDataAccess.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\res\\SqliteDataAccess.cs",
-              "RelativeDocumentMoniker": "EhKasir\\res\\SqliteDataAccess.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\res\\SqliteDataAccess.cs",
-              "RelativeToolTip": "EhKasir\\res\\SqliteDataAccess.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAMwG0AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T05:34:23.315Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PasswordHelper.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\res\\PasswordHelper.cs",
-              "RelativeDocumentMoniker": "EhKasir\\res\\PasswordHelper.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\res\\PasswordHelper.cs",
-              "RelativeToolTip": "EhKasir\\res\\PasswordHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T06:22:01.078Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserModel.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\res\\Model\\UserModel.cs",
-              "RelativeDocumentMoniker": "EhKasir\\res\\Model\\UserModel.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\res\\Model\\UserModel.cs",
-              "RelativeToolTip": "EhKasir\\res\\Model\\UserModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T04:04:52.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ProductModel.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\res\\Model\\ProductModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\res\\Model\\ProductModel.cs",
               "RelativeDocumentMoniker": "EhKasir\\res\\Model\\ProductModel.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\res\\Model\\ProductModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\res\\Model\\ProductModel.cs",
               "RelativeToolTip": "EhKasir\\res\\Model\\ProductModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T01:52:48.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T01:52:48.964Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "checkPriceForm.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\checkPriceForm.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\checkPriceForm.cs",
               "RelativeDocumentMoniker": "EhKasir\\checkPriceForm.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\checkPriceForm.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\checkPriceForm.cs",
               "RelativeToolTip": "EhKasir\\checkPriceForm.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAtwBwAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -185,11 +111,97 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\Form1.cs",
+              "RelativeDocumentMoniker": "EhKasir\\Form1.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\Form1.cs [Design]",
+              "RelativeToolTip": "EhKasir\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T10:25:10.66Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "EhKasir\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\Form1.Designer.cs",
+              "RelativeToolTip": "EhKasir\\Form1.Designer.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T06:13:08.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\Form1.cs",
+              "RelativeDocumentMoniker": "EhKasir\\Form1.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\Form1.cs",
+              "RelativeToolTip": "EhKasir\\Form1.cs",
+              "ViewState": "AgIAAMsBAAAAAAAAAIA6wNwBAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T06:13:17.416Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SqliteDataAccess.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\res\\SqliteDataAccess.cs",
+              "RelativeDocumentMoniker": "EhKasir\\res\\SqliteDataAccess.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\res\\SqliteDataAccess.cs",
+              "RelativeToolTip": "EhKasir\\res\\SqliteDataAccess.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAvwP8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T05:34:23.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PasswordHelper.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\res\\PasswordHelper.cs",
+              "RelativeDocumentMoniker": "EhKasir\\res\\PasswordHelper.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\res\\PasswordHelper.cs",
+              "RelativeToolTip": "EhKasir\\res\\PasswordHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T06:22:01.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TransactionModel.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\res\\Model\\TransactionModel.cs",
+              "RelativeDocumentMoniker": "EhKasir\\res\\Model\\TransactionModel.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\res\\Model\\TransactionModel.cs",
+              "RelativeToolTip": "EhKasir\\res\\Model\\TransactionModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAkwBIAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T00:52:59.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RoundedButton.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\res\\RoundedButton.cs",
+              "RelativeDocumentMoniker": "EhKasir\\res\\RoundedButton.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\res\\RoundedButton.cs",
+              "RelativeToolTip": "EhKasir\\res\\RoundedButton.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T06:50:51.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\Program.cs",
               "RelativeDocumentMoniker": "EhKasir\\Program.cs",
-              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\EhKasirv2\\EhKasir\\Program.cs",
               "RelativeToolTip": "EhKasir\\Program.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAqwBQAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

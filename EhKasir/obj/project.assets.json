@@ -998,11 +998,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\EhKasir.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\EhKasirv2\\EhKasir\\EhKasir.csproj",
       "projectName": "EhKasir",
-      "projectPath": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\EhKasir.csproj",
+      "projectPath": "C:\\Users\\User\\Source\\Repos\\EhKasirv2\\EhKasir\\EhKasir.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\EhKasir-main\\EhKasir\\obj\\",
+      "outputPath": "C:\\Users\\User\\Source\\Repos\\EhKasirv2\\EhKasir\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1085,7 +1085,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
