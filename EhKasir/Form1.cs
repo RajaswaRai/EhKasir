@@ -1,6 +1,6 @@
 ﻿using EhKasir;
-using KasirPBO.res.Model;
 using KasirPBO.res;
+using KasirPBO.res.Model;
 using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Collections.Generic;
@@ -13,6 +13,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace KasirPBO
@@ -473,6 +474,12 @@ namespace KasirPBO
             if (int.TryParse(buyerChangeTxt.Text, out int uangPembeli) == false || uangPembeli < 0)
             {
                 MessageBox.Show("Jumlah uang pembeli tidak cukup untuk membayar total transaksi.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrEmpty(buyerMoneyTxt.Text))
+            {
+                MessageBox.Show("Jumlah uang pembeli harus diisi.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
