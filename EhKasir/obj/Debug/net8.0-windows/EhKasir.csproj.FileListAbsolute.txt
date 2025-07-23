@@ -263,3 +263,5 @@ C:\Users\User\source\repos\EhKasir\EhKasir\obj\Debug\net8.0-windows\refint\EhKas
 C:\Users\User\source\repos\EhKasir\EhKasir\obj\Debug\net8.0-windows\EhKasir.pdb
 C:\Users\User\source\repos\EhKasir\EhKasir\obj\Debug\net8.0-windows\EhKasir.genruntimeconfig.cache
 C:\Users\User\source\repos\EhKasir\EhKasir\obj\Debug\net8.0-windows\ref\EhKasir.dll
+D:\Code\Csharp\VS\EhKasir\EhKasir\obj\Debug\net8.0-windows\EhKasir.Properties.Resources.resources
+D:\Code\Csharp\VS\EhKasir\EhKasir\obj\Debug\net8.0-windows\EhKasir.sourcelink.json

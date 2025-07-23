@@ -471,7 +471,7 @@ namespace KasirPBO
                 return;
             }
 
-            if (int.TryParse(buyerChangeTxt.Text, out int uangPembeli) == false || uangPembeli < 0)
+            if (int.TryParse(buyerMoneyTxt.Text, out int uangPembeli) == false || uangPembeli < total)
             {
                 MessageBox.Show("Jumlah uang pembeli tidak cukup untuk membayar total transaksi.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
@@ -483,6 +483,17 @@ namespace KasirPBO
                 return;
             }
 
+            // Periksa stok sebelum memproses transaksi
+            foreach (var product in transactionProducts)
+            {
+                var currentStock = SqliteDataAccess.GetProductStock(product.name);
+                if (currentStock < product.quantity)
+                {
+                    MessageBox.Show($"Stok {product.name} tidak mencukupi. Stok tersedia: {currentStock}", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+            }
+
             string itemsJson = JsonSerializer.Serialize(
                  transactionProducts.Select(p => new
                  {
@@ -492,10 +503,8 @@ namespace KasirPBO
                  })
              );
 
-            // Ambil user ID dari user yang sedang login (misal: userID disimpan saat login)
-            string currentUserID = currentUser!.id.ToString(); // pastikan kamu punya variabel currentUser
+            string currentUserID = currentUser!.id.ToString();
 
-            // Buat objek transaksi
             TransactionModel transaction = new TransactionModel
             {
                 items = itemsJson,
@@ -506,8 +515,14 @@ namespace KasirPBO
                 timestamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
             };
 
-            // Simpan ke database
-            SqliteDataAccess.SaveTransaction(transaction); // pastikan fungsi ini ada
+            // Simpan transaksi
+            SqliteDataAccess.SaveTransaction(transaction);
+
+            // Update stok untuk setiap produk yang dibeli
+            foreach (var product in transactionProducts)
+            {
+                SqliteDataAccess.UpdateProductStock(product.name, product.quantity);
+            }
 
             // Kosongkan transaksi
             transactionProducts.Clear();

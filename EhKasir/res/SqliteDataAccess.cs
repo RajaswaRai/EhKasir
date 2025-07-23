@@ -186,6 +186,37 @@ namespace KasirPBO
             }
         }
 
+        public static void UpdateProductStock(string productName, int quantitySold)
+        {
+            using (var conn = new SqliteConnection(connectionString))
+            {
+                conn.Open();
+                var cmd = conn.CreateCommand();
+                cmd.CommandText = @"UPDATE products SET quantity = quantity - @quantitySold 
+                          WHERE name = @productName";
+
+                cmd.Parameters.AddWithValue("@quantitySold", quantitySold);
+                cmd.Parameters.AddWithValue("@productName", productName);
+
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        // Method untuk mendapatkan stok produk
+        public static int GetProductStock(string productName)
+        {
+            using (var conn = new SqliteConnection(connectionString))
+            {
+                conn.Open();
+                var cmd = conn.CreateCommand();
+                cmd.CommandText = "SELECT quantity FROM products WHERE name = @productName";
+                cmd.Parameters.AddWithValue("@productName", productName);
+
+                var result = cmd.ExecuteScalar();
+                return result != null ? Convert.ToInt32(result) : 0;
+            }
+        }
+
         public static void updateProduct(string code, ProductModel updatedProduct)
         {
             using (IDbConnection conn = new SqliteConnection(LoadConnectionString()))
