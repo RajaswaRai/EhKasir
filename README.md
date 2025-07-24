@@ -23,7 +23,7 @@ Aplikasi Point of Sale (POS) ini dirancang untuk membantu proses transaksi penju
 - **Visual studio 2022**
   - .NET dekstop development package
 
-## 🧑‍💼 User manual
+## 🧑‍💼 Instalasi
 
 1. Download EhKasir source code
 2. Open EhKasir.sln
