@@ -791,5 +791,10 @@ namespace KasirPBO
         {
 
         }
+
+        private void loginpanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
